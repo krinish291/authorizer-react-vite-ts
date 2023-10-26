@@ -6,7 +6,6 @@ import Login from "./pages/login";
 
 export default function App() {
   const { user, loading, authorizerRef, setUser, setToken } = useAuthorizer();
-
   const logout = async () => {
     await authorizerRef.logout();
     setUser(null);
