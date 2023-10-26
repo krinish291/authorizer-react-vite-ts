@@ -7,7 +7,8 @@ function Root() {
       <AuthorizerProvider
         config={{
           authorizerURL: import.meta.env.VITE_AUTHORIZER_URL,
-          redirectURL: window.location.origin,
+          redirectURL:
+            import.meta.env.VITE_REDIRECT_URL || window.location.origin,
           clientID: import.meta.env.VITE_CLIENT_ID,
         }}
       >
