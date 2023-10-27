@@ -2,6 +2,7 @@ import { AuthorizerProvider } from "@authorizerdev/authorizer-react";
 import App from "./App";
 
 function Root() {
+  console.log(import.meta.env.VITE_RETURN_URL);
   return (
     <>
       <AuthorizerProvider
